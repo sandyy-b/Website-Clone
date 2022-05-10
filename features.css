@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap');
+
+.navPosition {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.try {
+    margin-top: 30px;
+    width: 121px;
+}
+
+.image {
+    width: 12%;
+}
+
+.customerService {
+    margin-top: 30px;
+    width: 155px;
+}
+
+.features {
+    margin-top: 30px;
+    width: 85px;
+}
+
+.backgroundHeader {
+    background-image: url("/images/featuresBgImage.png");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.linkDecoration {
+    text-decoration: none;
+}
+
+.bdr1 {
+    padding-left: 100px;
+}
+
+.bdr2 {
+    padding-left: 135px;
+}
+
+.bdr3 {
+    padding-left: 30px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.bdr4 {
+    padding-left: 155px;
+}
+
+.bdr5 {
+    padding-left: 80px;
+}
+
+.featuresContentPrimary {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+
+.featuresContentSecondry {
+    font-size: 35px;
+}
+
+.horizontalRow {
+    border: 2px solid rgb(189, 59, 22);
+    width: 70px;
+    background-color: rgb(189, 59, 22);
+}
+
+/* ********************************** */
+
+.z123 {
+    border: 2px solid blue;
+}

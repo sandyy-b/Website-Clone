@@ -1,89 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap');
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-.backgroundHeader{
+.backgroundHeader {
     background-image: url("/images/blog.jpg");
     background-position: center;
     width: 100%;
     height: 100%;
+    display: inline-block;
 }
 
-.try{
+.try {
     margin-top: 30px;
     width: 120px;
 }
 
-.image{
+.image {
     width: 12%;
 }
 
-.customerService{
+.customerService {
     margin-top: 30px;
     width: 155px;
 }
 
-.features{
+.features {
     margin-top: 30px;
     width: 85px;
 }
 
-.bannerContentSecondry{
-    font-size: 55px;    
+.bannerContentSecondry {
+    font-size: 55px;
 }
 
-.bannerContentPrimary{
+.bannerContentPrimary {
     font-weight: 100;
     font-size: 55px;
 }
 
-.bannerContentTrial{
+.bannerContentTrial {
     font-size: 28px;
     padding-left: 50px;
 }
 
-.mnb{
-    margin-top: 17%;
+.horizontalRow {
+    border: 2px solid rgb(189, 59, 22);
+    width: 70px;
+    background-color: rgb(189, 59, 22);
 }
 
-.startHereButton{
+.rowMargin {
+    margin-top: 22%;
+}
+
+.startHereButton {
     border-radius: 100px;
     border: 1px solid white;
-    background-color: rgb(186,58,22);
+    background-color: rgb(186, 58, 22);
     color: white;
     padding: 10px 60px;
 }
 
-.bdr{
-    padding-left: 80px;
-}
-
-.tu{
+.buttonBottomMargin {
     margin-bottom: 320px;
 }
 
-.bdr1{
+.buttonBottomMarginFeatures{
+    margin-bottom: 130px;
+}
+
+.bdr {
+    padding-left: 80px;
+}
+
+.bdr1 {
     padding-left: 100px;
-    color: rgb(68,68,68);
+    color: rgb(68, 68, 68);
 }
 
-.horizontalRow{
-    border: 2px solid rgb(189,59,22);
-    width: 70px;
-    background-color: rgb(189,59,22);
+.bdr2 {
+    padding-left: 135px;
 }
 
-.bdr4{
-    padding-left: 155px;   
+.bdr3{
+    padding-left: 50px;
 }
 
-.bdr5{
+.bdr4 {
+    padding-left: 155px;
+}
+
+.bdr5 {
     padding-left: 235px;
 }
 
-.imageThemes{
-    width: 60%;
+.imageThemes {
+    width: 70%;
+}
+
+.whySimplesite {
+    background-color: rgb(246, 247, 249);
+}
+
+.linkDecoration {
+    text-decoration: none;
+}
+
+.mobileReady {
+    padding-left: 155px;
+    padding-top: 100px;
+}
+
+.editOnTheGo {
+    font-weight: 100;
+}
+
+.mobileReadyAlignPrimary {
+    float: right;
+}
+
+.mobileReadyAlignSecondry {
+    text-align: right;
+    color: rgb(86, 86, 86);
+}
+
+.featuresContentPrimary{
+    color: rgb(86, 86, 86);
+}
+
+.featuresContentSubHeading{
+    margin-left: -50px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgb(51,51,51);
+}
+
+.navPosition{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
 }
