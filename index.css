@@ -64,11 +64,19 @@
     padding: 10px 60px;
 }
 
+.loginButton {
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
 .buttonBottomMargin {
     margin-bottom: 320px;
 }
 
-.buttonBottomMarginFeatures{
+.buttonBottomMarginFeatures {
     margin-bottom: 130px;
 }
 
@@ -85,7 +93,7 @@
     padding-left: 135px;
 }
 
-.bdr3{
+.bdr3 {
     padding-left: 50px;
 }
 
@@ -127,23 +135,212 @@
     color: rgb(86, 86, 86);
 }
 
-.featuresContentPrimary{
+.featuresContentPrimary {
     color: rgb(86, 86, 86);
 }
 
-.featuresContentSubHeading{
+.featuresContentSubHeading {
     margin-left: -50px;
     margin-right: 30px;
     text-align: center;
 }
 
-.footer{
-    background-color: rgb(51,51,51);
+.footer {
+    background-color: rgb(51, 51, 51);
 }
 
-.navPosition{
+.navPosition {
     position: fixed;
     top: 0%;
     left: 0%;
     width: 100%;
+}
+
+.borderPaddingFeatures {
+    padding-left: 50px;
+}
+
+.borderPaddingFeatures1 {
+    padding-left: 100px;
+}
+
+.borderPaddingFeatures3 {
+    padding-left: 30px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.borderPaddingFeatures5 {
+    padding-left: 80px;
+}
+
+.featuresPrimary {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+
+.featuresContentSecondry {
+    font-size: 35px;
+}
+
+.backgroundHeaderFeatures {
+    background-image: url("/images/featuresBgImage.png");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.imageMargin {
+    margin-left: 80px;
+}
+
+.featuresSubHeading {
+    margin-left: -15px;
+    margin-right: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.tryFeatures {
+    margin-top: 30px;
+    width: 121px;
+}
+
+.backgroundHeaderCustomerService {
+    background-image: url("/images/customerServiceBgImage.png");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.bannerCustomerService {
+    font-weight: 300;
+}
+
+.hrCustomerService {
+    margin-left: 100px;
+}
+
+.buttonCustomerService:hover {
+    border: none;
+    background-color: rgb(186, 58, 22);
+}
+
+.navBgColor {
+    background-color: white;
+}
+
+.navBgColor .text-white {
+    color: black !important;
+}
+
+.navBgColor .colorChange img {
+    filter: invert(100%);
+}
+
+.navBgColor .colorChange button {
+    border: 1px solid black;
+    color: black;
+}
+
+.z123 {
+    border: 2px solid blue;
+}
+
+.faqHeading {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 19px;
+    -webkit-transition: text-indent 0.2s;
+    text-indent: 20px;
+    color: #333;
+}
+
+.faq-text {
+    font-family: Open Sans;
+    font-weight: 400;
+    color: #919191;
+    width: 95%;
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+.faq {
+    width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #E1E1E1;
+}
+
+.faq label {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 56px;
+    padding-top: 1px;
+
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.faq input[type="checkbox"] {
+    display: none;
+}
+
+.faq .faq-arrow {
+    width: 5px;
+    height: 5px;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-top: 2px solid rgba(0, 0, 0, 0.33);
+    border-right: 2px solid rgba(0, 0, 0, 0.33);
+    float: right;
+    position: relative;
+    top: -30px;
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.faq input[type="checkbox"]:checked+label>.faq-arrow {
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.faq input[type="checkbox"]:checked+label {
+    display: block;
+    background: rgba(255, 255, 255, 255) !important;
+    color: #4f7351;
+    height: 225px;
+    transition: height 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq input[type='checkbox']:not(:checked)+label {
+    display: block;
+    transition: height 0.8s;
+    height: 60px;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.faqMargin {
+    margin-left: -115px;
 }
