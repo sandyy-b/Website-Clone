@@ -224,9 +224,8 @@
     margin-left: 100px;
 }
 
-.buttonCustomerService:hover {
+.buttonCustomerService {
     border: none;
-    background-color: rgb(186, 58, 22);
 }
 
 .navBgColor {
@@ -312,7 +311,7 @@
     transform: rotate(45deg);
 }
 
-.faq input[type="checkbox"]:checked+label>.faq-arrow {
+.faq label.faqOpen .faq-arrow {
     transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
     transition: transform 0.8s, -webkit-transform 0.8s;
@@ -321,19 +320,19 @@
     transform: rotate(135deg);
 }
 
-.faq input[type="checkbox"]:checked+label {
+.faq label {
+    display: block;
+    transition: height 0.8s;
+    height: 60px;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq label.faqOpen {
     display: block;
     background: rgba(255, 255, 255, 255) !important;
     color: #4f7351;
     height: 225px;
     transition: height 0.8s;
-    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.faq input[type='checkbox']:not(:checked)+label {
-    display: block;
-    transition: height 0.8s;
-    height: 60px;
     -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -343,4 +342,20 @@
 
 .faqMargin {
     margin-left: -115px;
+}
+
+.hrCustomerServiceLowerContent {
+    margin-left: 150px;
+}
+
+.hrCustomerServiceSubLowerContent {
+    margin-left: -40px;
+}
+
+.hrCustomerServiceSubLowerContentPara2 {
+    margin-left: -180px;
+}
+
+.faqOpen .faq-text {
+    display: block;
 }

@@ -75,24 +75,23 @@
         </div>
 
         <div class="col-lg-2" style="width: 19%;">
-            <button class="p-3 buttonCustomerService">SimpleSite subscriptions and Payment</button>
+            <button class="p-3 buttonCustomerService" id="simpleSiteSubscriptionsAndPaymentBtn"
+                onclick="displaySimpleSiteSubscriptionsAndPaymentFaq()">SimpleSite
+                subscriptions and Payment</button>
         </div>
 
         <div class="col-lg-2">
-            <button class="p-3 buttonCustomerService">General use of SimpleSite</button>
+            <button class="p-3 buttonCustomerService" id="generalUseOfSimpleSiteBtn"
+                onclick="displayGeneralUseOfSimpleSite()">General use of
+                SimpleSite</button>
         </div>
     </div>
 
-
-
-
-
-
-    <div class="row mt-5">
+    <div class="row mt-5" id="faqPrimary">
         <div class="col-lg-10 faqMargin">
             <div class='faq'>
                 <input id='faq-a' type='checkbox'>
-                <label for="faq-a">
+                <label for="faq-a" onclick="openFaqQues('faq-a');">
                     <p class="faqHeading">How can I get my own domain name?</p>
                     <div class='faq-arrow'></div>
                     <p class="faq-text">At SimpleSite it’s easy to get your own domain name for your website. When you
@@ -103,7 +102,7 @@
                 </label>
 
                 <input id='faq-b' type='checkbox'>
-                <label for='faq-b'>
+                <label for='faq-b' onclick="openFaqQues('faq-b');">
                     <p class="faqHeading">I have received a SimpleSite gift certificate. How do I redeem it?</p>
                     <div class='faq-arrow'></div>
                     <p class="faq-text">If you have received a SimpleSite gift certificate and want to use it to make a
@@ -112,7 +111,7 @@
                 </label>
 
                 <input id='faq-c' type='checkbox'>
-                <label for='faq-c'>
+                <label for='faq-c' onclick="openFaqQues('faq-c');">
                     <p class="faqHeading">Can I renew a current subscription with a gift certificate?</p>
                     <div class='faq-arrow'></div>
                     <p class="faq-text">Yes, but only if the SimpleSite gift certificate you received has that option
@@ -122,7 +121,7 @@
                 </label>
 
                 <input id='faq-d' type='checkbox'>
-                <label for='faq-d'>
+                <label for='faq-d' onclick="openFaqQues('faq-d');">
                     <p class="faqHeading">What happens when my subscription expires?</p>
                     <div class='faq-arrow'></div>
                     <p class="faq-text">If your subscription is not renewed, it will expire and your website will go
@@ -137,7 +136,7 @@
                 </label>
 
                 <input id='faq-e' type='checkbox'>
-                <label for='faq-e'>
+                <label for='faq-e' onclick="openFaqQues('faq-e');">
                     <p class="faqHeading">What do I need to start my business?​</p>
                     <div class='faq-arrow'></div>
                     <p class="faq-text">Opening a business can be intimidating, especially when you don’t have any prior
@@ -152,18 +151,98 @@
             </div>
         </div>
 
+    </div>
 
+    <div class="row mt-5" id="faqSecondry">
+        <div class="col-lg-10 faqMargin">
+            <div class='faq'>
+                <input id='faq-1' type='checkbox'>
+                <label for="faq-1" onclick="openFaqQues('faq-1');">
+                    <p class="faqHeading">I forgot my password. What should I do?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">To reset your password visit our login page, click on "Have you forgotten your
+                        password?", and enter the required information. Then, we will send a password reset link to your
+                        registered email address. Please remember to check your spam/promotions folders in case our
+                        email ends there.</p>
+                </label>
 
+                <input id='faq-2' type='checkbox'>
+                <label for='faq-2' onclick="openFaqQues('faq-2');">
+                    <p class="faqHeading">Can I change the name of my SimpleSite website?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">Yes, you can!
+
+                        If you have a basic free subscription, your website's address is based on your username, and you
+                        can modify it via the "Account" section of your website's editor by changing your "website
+                        name". Keep in mind that this will change your username as well.
+
+                        If your website has a domain name, and you wish to change it, please contact our customer
+                        service team at customerservice@simplesite.com, and provide your website's address. We kindly
+                        ask you to contact us from the email address used to register your website.</p>
+                </label>
+
+                <input id='faq-3' type='checkbox'>
+                <label for='faq-3' onclick="openFaqQues('faq-3');">
+                    <p class="faqHeading">What is or what will be my website address on the Internet?
+                    </p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">Your username becomes your website address. For example, if you choose the
+                        username "Caulfields", then your website address will be caulfields.SimpleSite.com. When you
+                        purchase a SimpleSite subscription, you can choose your own custom domain name, for example
+                        www.caulfields.com.
+
+                        To subscribe and get your own domain name please click here.</p>
+                </label>
+
+                <input id='faq-4' type='checkbox'>
+                <label for='faq-4' onclick="openFaqQues('faq-4');">
+                    <p class="faqHeading">Does SimpleSite save my images?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">Yes, but we save them in a different size and format than the images you have on
+                        your computer of device. We make images smaller to reduce page load times. This means that
+                        SimpleSite is not a backup for your images or somewhere that you can store images. SimpleSite is
+                        a place where you can show your images, but remember to have a backup of your content before
+                        uploading anything.</p>
+                </label>
+
+                <input id='faq-5' type='checkbox'>
+                <label for='faq-5' onclick="openFaqQues('faq-5');">
+                    <p class="faqHeading">I have not received the SimpleSite weekly newsletter. Why is that?​</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">Check to make sure your email address is valid and working. Log in and review
+                        and edit the information you provided when you registered with SimpleSite.com.
+
+                        The newsletter email could have ended up in your spam folder. If that is the case, please add
+                        SimpleSite.com to your list of safe senders/trusted websites in your own email settings.</p>
+                </label>
+            </div>
+        </div>
 
     </div>
 
+    <div class="row mt-5">
+        <div class="col-lg-5">
+        </div>
 
+        <div class="col-lg-6 pt-5">
+            <h1 style="color: rgb(68, 68, 68);">CUSTOMER SERVICE</h1>
+            <p class="horizontalRow hrCustomerServiceLowerContent mb-4">
+            <p class="mx-4"><span class="text-muted">Email:</span> <span
+                    class="text-primary">customerservice@simplesite.com</span></p>
+            <p class="text-muted hrCustomerServiceSubLowerContent">We try to respond to all requests within two business
+                days.</p>
+            <p class="text-muted hrCustomerServiceSubLowerContentPara2">Please describe your issue and include the name
+                of
+                your website to make it easier for us to help you.</p>
+            <h6 class="bdr2" style="color: rgb(68, 68, 68);">SimpleSite.com</h6>
+            <p class="text-muted bdr1 mx-3">Toldbodgade 31, 3.tv</p>
+            <p class="text-muted bdr1 mx-3">1253 Copenhagen K.</p>
+            <p class="text-muted bdr2 mx-3">Denmark</p>
+            <p class="text-muted bdr mx-2">VAT Reg No: DK27 97 24 54</p>
+            <p class="text-muted mb-5">Owned by SimpleSite ApS VAT Reg No DK10079861</p>
+        </div>
 
-
-
-
-
-
+    </div>
 
     <div class="footer mt-5">
         <div class="row">
@@ -180,7 +259,7 @@
                     game - it should be easy, exciting and uplifting. Something to try and subsequently to learn
                     from.
                     This is the same experience our employees have working for us.</p>
-                <img class="mb-5" src="/images/footerSocialIcons.jpg" alt="Social Icons"
+                <img class="mb-5" src="/images/footerSocialIcons.jpg" alt="Social Icons" onclick="redirectSocialLinks()"
                     style="width: 300px; height: 80px; margin-left: -20px;">
             </div>
 
