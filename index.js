@@ -53,7 +53,7 @@ function displayGeneralUseOfSimpleSite() {
 
 function openFaqQues(e) {
     if (document.querySelector('[for="' + e + '"]').classList.contains('faqOpen') == true) {
-        document.querySelector('[for="' + e + '"]').classList.remove('faqOpen');    
+        document.querySelector('[for="' + e + '"]').classList.remove('faqOpen');
     }
     else {
         var queslabl = document.querySelectorAll('.faqMargin label');
@@ -68,4 +68,11 @@ function openFaqQues(e) {
     }
 
 
+}
+
+// **************HAMBURGER MENU************************
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+    console.log("gassfdyga")
 }

@@ -13,38 +13,74 @@
 </head>
 
 <body>
-    <div class="row navPosition mb-5" id="nav">
-        <div class="col-lg-1 image">
-            <a href="index.html"><img class="p-4 simpleSiteImg" src="/images/simpleSite.png" alt="simpleSite"></a>
+    <div class="navPosition col-md-12 mb-5 d-inline-flex align-items-center justify-content-between " id="nav">
+        <div class="site-logo-row d-inline-flex">
+            <div class="d-inline-block image p-3">
+                <a href="index.html"><img class="mt-2" src="/images/simpleSite.png" alt="simpleSite"></a>
+            </div>
+            <div class="site-navigation-row d-inline-flex">
+                <div class="col-lg-1 text-white try colorChange">
+                    <p>Try it for free</p>
+                </div>
+
+                <div class="col-lg-1 customerService colorChange">
+                    <a class="text-white linkDecoration" href="customerService.html">Customer Service</a>
+                </div>
+
+                <div class="col-lg-1 features colorChange">
+                    <a class="text-white linkDecoration" href="features.html">Features</a>
+                </div>
+
+                <div class="col-lg-1 text-white try colorChange">
+                    <p>Themes</p>
+                </div>
+            </div>
         </div>
 
-        <div class="col-lg-1 text-white try">
-            <p>Try it for free</p>
+        <div class="right-language-box d-inline-flex">
+            <div class="mt-3 mx-1 colorChange" style="text-align: right;">
+                <button class="loginButton d-inline-flex">LOG IN</button>
+            </div>
+
+            <div class="mt-4 mx-4 colorChange" style="display:flex">
+                <img src="/images/globe.png" alt="Globe" style="width: 25px; height: 25px;">
+                <p class="text-white mx-3">English</p>
+            </div>
         </div>
 
-        <div class="col-lg-1 customerService">
-            <a class="text-white linkDecoration" href="customerService.html">Customer Service</a>
+        <!-- ****************HAMBURGER MENU****************** -->
+
+        <div class="hamburger" onclick="toggleMobileMenu(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32"
+                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g>
+                    <g xmlns="http://www.w3.org/2000/svg" id="Layer_1">
+                        <path d="m29 8h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                            class=""></path>
+
+                        <path d="m29 28h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                            class=""></path>
+
+                        <path d="m29 18h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"
+                            class=""></path>
+                    </g>
+                </g>
+            </svg>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="navLists linkDecoration" href="customerService.html">Customer Service</a></li>
+                <li><a class="navLists linkDecoration" href="features.html">Features</a></li>
+                <li> <a class="navLists linkDecoration">Themes</a></li>
+                <li><a class="navLists linkDecoration">Form</a></li>
+                <!-- <li id="login"> <button class="btn">LOG IN</button></li> -->
+            </ul>
         </div>
 
-        <div class="col-lg-1 text-white features">
-            <a class="text-white linkDecoration" href="features.html">Features</a>
-        </div>
 
-        <div class="col-lg-1 text-white try">
-            <p>Themes</p>
-        </div>
-
-        <div class="col-lg-5">
-        </div>
-
-        <div class="col-lg-1 mt-3 mx-1 colorChange" style="text-align: right;">
-            <button class="loginButton">LOG IN</button>
-        </div>
-
-        <div class="col-lg-1 mt-4 mx-4 colorChange" style="display:flex">
-            <img src="/images/globe.png" alt="Globe" style="width: 25px; height: 25px;">
-            <p class="text-white mx-3">English</p>
-        </div>
+        <!-- ***************************************************** -->
     </div>
 
     <div class="backgroundHeaderCustomerService mb-5">
@@ -250,7 +286,7 @@
             </div>
 
             <div class="col-lg-2 mt-5">
-                <h4 class="text-white">SIMPLESITE</h4>
+                <a class="text-white linkDecoration" href="index.html" style="font-size: 26px;">SIMPLESITE</a>
                 <p class="horizontalRow mb-5"></p>
                 <p class="text-white">Our user experience ideals run through every vein of our company. Our ideals
                     are not to attain
@@ -269,8 +305,8 @@
             <div class="col-lg-1 mt-5">
                 <h4 class="text-white">PRODUCT</h4>
                 <p class="horizontalRow mb-5"></p>
-                <p class="text-white">Features</p>
-                <p class="text-white">Themes</p>
+                <a class="text-white linkDecoration" href="features.html">Features</a>
+                <p class="text-white mt-3">Themes</p>
                 <p class="text-white">Gift Certificate</p>
                 <p class="text-white">Pricing</p>
             </div>
@@ -292,8 +328,8 @@
             <div class="col-lg-2 mt-5">
                 <h4 class="text-white">COMMUNITY</h4>
                 <p class="horizontalRow mb-5"></p>
-                <p class="text-white">Customer service</p>
-                <p class="text-white">FAQ</p>
+                <a class="text-white linkDecoration" href="customerService.html">Customer service</a>
+                <p class="text-white mt-3">FAQ</p>
             </div>
         </div>
 
